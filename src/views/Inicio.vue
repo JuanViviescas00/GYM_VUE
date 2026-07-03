@@ -5,7 +5,7 @@
       <!-- Cabecera Sutil y Minimalista (Menos llamativa que las opciones) -->
       <div class="text-center text-white header-section">
         <div class="text-caption text-grey-5 tracking-widest text-uppercase">Plataforma de Entrenamiento</div>
-        <h2 class="app-subtitle text-weight-bold q-my-xs text-uppercase">BODY VUE</h2>
+        <h2 class="app-subtitle text-weight-bold q-my-xs text-uppercase">V-fit</h2>
         <div class="title-divider q-mx-auto q-mb-sm"></div>
         <p class="text-body2 text-grey-4 q-mb-none">
           Elige el grupo muscular que deseas ejercitar hoy
