@@ -9,7 +9,7 @@
           <q-avatar size="36px" class="custom-avatar q-mr-sm">
             <q-icon name="fitness_center" class="glow-icon" size="20px" />
           </q-avatar>
-          <span class="header-title">Body Vue</span>
+          <span class="header-title">V-fit</span>
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
