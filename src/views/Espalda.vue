@@ -2,7 +2,7 @@
   <q-page class="q-pa-md page-bg">
     
     <!-- Banner de la sección en Estilo Glassmorphism -->
-    <div class="col-12 q-mb-xl text-center">
+    <div class="col-12 q-mb-xl text-center banner-container">
       <div class="header-banner q-pa-lg text-white rounded-borders glass-header">
         <h1 class="text-h4 text-weight-bolder q-my-none text-uppercase tracking-wider">
           Entrenamiento de <span class="text-blue">Espalda</span>
@@ -30,7 +30,7 @@ const ejerciciosEspalda = [
   {
     titulo: 'Dominadas (Pull-ups)',
     imagen: '/espalda_dominadas.png',
-    video: 'https://www.youtube.com/embed/eGo4IY-nOlk', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/npyLB-7o19o?si=nFYKwdMWYapu_jwI', // Link en formato embed directo
     dificultad: 'Avanzado',
     enfoque: 'Dorsal Ancho, Redondo Mayor y Bíceps',
     paraQueSirve: 'Sirve para ensanchar la espalda dorsal (logrando la forma de V) e incrementar la fuerza de tracción general utilizando el peso de tu propio cuerpo.',
@@ -44,7 +44,7 @@ const ejerciciosEspalda = [
   {
     titulo: 'Remo con Barra (Barbell Row)',
     imagen: '/espalda_remo_barra.png',
-    video: 'https://www.youtube.com/embed/G8LyyGvTdug', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/P_kNA_HElgA?si=K3IBz_JxqyfJIF1o', // Link en formato embed directo
     dificultad: 'Intermedio',
     enfoque: 'Espalda Media, Trapecios y Dorsal',
     paraQueSirve: 'Se realiza para desarrollar el grosor y densidad de la espalda media, mejorando notablemente la postura y la fuerza de tracción horizontal.',
@@ -101,5 +101,30 @@ const ejerciciosEspalda = [
 
 .tracking-wider {
   letter-spacing: 2px;
+}
+
+/* Ajustes de Responsividad */
+@media (max-width: 480px) {
+  .page-bg.q-pa-md {
+    padding: 12px 8px !important;
+  }
+  
+  .banner-container {
+    margin-bottom: 24px !important;
+  }
+
+  .glass-header.q-pa-lg {
+    padding: 16px !important;
+  }
+
+  .glass-header h1 {
+    font-size: 1.5rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .glass-header p {
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+  }
 }
 </style>

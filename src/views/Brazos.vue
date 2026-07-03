@@ -2,7 +2,7 @@
   <q-page class="q-pa-md page-bg">
     
     <!-- Banner de la sección en Estilo Glassmorphism -->
-    <div class="col-12 q-mb-xl text-center">
+    <div class="col-12 q-mb-xl text-center banner-container">
       <div class="header-banner q-pa-lg text-white rounded-borders glass-header">
         <h1 class="text-h4 text-weight-bolder q-my-none text-uppercase tracking-wider">
           Entrenamiento de <span class="text-purple">Brazos</span>
@@ -30,7 +30,7 @@ const ejerciciosBrazos = [
   {
     titulo: 'Press Militar con Barra (Overhead Press)',
     imagen: '/brazos_press_militar.png',
-    video: 'https://www.youtube.com/embed/_RlRD5y119Y', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/xM2FGQuhZAY?si=TeANlN01dafWqq_E', // Link en formato embed directo
     dificultad: 'Intermedio',
     enfoque: 'Deltoides Anterior, Tríceps y Core',
     paraQueSirve: 'Sirve para desarrollar la fuerza y tamaño del deltoides (hombros), mejorando la fuerza de empuje por encima de la cabeza y la estabilidad general del core en posición de pie.',
@@ -44,7 +44,7 @@ const ejerciciosBrazos = [
   {
     titulo: 'Elevaciones Laterales con Mancuerna',
     imagen: '/brazos.png',
-    video: 'https://www.youtube.com/embed/sQL__mO8Q1I', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/4JY1-jVNRqc?si=F2s26WKatS7KcA7y', // Link en formato embed directo
     dificultad: 'Principiante',
     enfoque: 'Deltoides Lateral (Hombros)',
     paraQueSirve: 'Se realiza para aislar el deltoides lateral, dando ese aspecto redondeado, tridimensional y ancho a los hombros para mejorar la silueta corporal.',
@@ -58,7 +58,7 @@ const ejerciciosBrazos = [
   {
     titulo: 'Curl de Bíceps con Barra',
     imagen: '/brazos.png',
-    video: 'https://www.youtube.com/embed/3n-v063BvYg', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/M67E8xSxrsA?si=d3MavqWNATc97c9k', // Link en formato embed directo
     dificultad: 'Principiante',
     enfoque: 'Bíceps Braquial y Braquiorradial',
     paraQueSirve: 'Se hace para ganar masa muscular y fuerza en la parte frontal de los brazos mediante la flexión del codo contra gravedad.',
@@ -72,7 +72,7 @@ const ejerciciosBrazos = [
   {
     titulo: 'Extensión de Tríceps en Polea (Tricep Pushdown)',
     imagen: '/brazos.png',
-    video: 'https://www.youtube.com/embed/6Fzep104f8s', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/xfS2-dkcC1k?si=AmKSCxkIbkUiMXHQ', // Link en formato embed directo
     dificultad: 'Principiante',
     enfoque: 'Tríceps (Cabeza lateral y medial)',
     paraQueSirve: 'Sirve para definir, tonificar y fortalecer la parte posterior del brazo (tríceps), la cual representa aproximadamente el 60% del volumen del brazo.',
@@ -101,5 +101,30 @@ const ejerciciosBrazos = [
 
 .tracking-wider {
   letter-spacing: 2px;
+}
+
+/* Ajustes de Responsividad */
+@media (max-width: 480px) {
+  .page-bg.q-pa-md {
+    padding: 12px 8px !important;
+  }
+  
+  .banner-container {
+    margin-bottom: 24px !important;
+  }
+
+  .glass-header.q-pa-lg {
+    padding: 16px !important;
+  }
+
+  .glass-header h1 {
+    font-size: 1.5rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .glass-header p {
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+  }
 }
 </style>

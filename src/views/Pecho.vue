@@ -2,7 +2,7 @@
   <q-page class="q-pa-md page-bg">
     
     <!-- Banner de la sección en Estilo Glassmorphism -->
-    <div class="col-12 q-mb-xl text-center">
+    <div class="col-12 q-mb-xl text-center banner-container">
       <div class="header-banner q-pa-lg text-white rounded-borders glass-header">
         <h1 class="text-h4 text-weight-bolder q-my-none text-uppercase tracking-wider">
           Entrenamiento de <span class="text-red">Pecho</span>
@@ -58,7 +58,7 @@ const ejerciciosPecho = [
   {
     titulo: 'Aperturas con Mancuernas (Dumbbell Flyes)',
     imagen: '/pecho_aperturas.png',
-    video: 'https://www.youtube.com/embed/mFmgYDPxxCo', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/QwuUZ5wgQOk', // Link en formato embed directo
     dificultad: 'Intermedio',
     enfoque: 'Pectoral Mayor (Fibras externas e internas)',
     paraQueSirve: 'Se hace para aislar las fibras del pecho y expandir la caja torácica mediante un estiramiento profundo al final del entrenamiento, promoviendo la definición muscular.',
@@ -101,5 +101,30 @@ const ejerciciosPecho = [
 
 .tracking-wider {
   letter-spacing: 2px;
+}
+
+/* Ajustes de Responsividad */
+@media (max-width: 480px) {
+  .page-bg.q-pa-md {
+    padding: 12px 8px !important;
+  }
+  
+  .banner-container {
+    margin-bottom: 24px !important;
+  }
+
+  .glass-header.q-pa-lg {
+    padding: 16px !important;
+  }
+
+  .glass-header h1 {
+    font-size: 1.5rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .glass-header p {
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+  }
 }
 </style>

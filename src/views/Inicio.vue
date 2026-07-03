@@ -19,7 +19,7 @@
         <div class="col-12 col-sm-6 col-md-3">
           <q-card class="grupo-card chest-card cursor-pointer rounded-borders shadow-4" @click="irARuta('/pecho')">
             <div class="img-container">
-              <q-img src="/pecho.png" height="240px" class="card-img">
+              <q-img src="/pecho.png" class="card-img">
                 <div class="absolute-bottom text-h6 text-weight-bold text-center text-red bg-card-label">
                   PECHO
                 </div>
@@ -37,7 +37,7 @@
         <div class="col-12 col-sm-6 col-md-3">
           <q-card class="grupo-card back-card cursor-pointer rounded-borders shadow-4" @click="irARuta('/espalda')">
             <div class="img-container">
-              <q-img src="/espalda.png" height="240px" class="card-img">
+              <q-img src="/espalda.png" class="card-img">
                 <div class="absolute-bottom text-h6 text-weight-bold text-center text-blue bg-card-label">
                   ESPALDA
                 </div>
@@ -55,7 +55,7 @@
         <div class="col-12 col-sm-6 col-md-3">
           <q-card class="grupo-card legs-card cursor-pointer rounded-borders shadow-4" @click="irARuta('/piernas')">
             <div class="img-container">
-              <q-img src="/piernas.png" height="240px" class="card-img">
+              <q-img src="/piernas.png" class="card-img">
                 <div class="absolute-bottom text-h6 text-weight-bold text-center text-teal bg-card-label">
                   PIERNAS
                 </div>
@@ -73,7 +73,7 @@
         <div class="col-12 col-sm-6 col-md-3">
           <q-card class="grupo-card arms-card cursor-pointer rounded-borders shadow-4" @click="irARuta('/brazos')">
             <div class="img-container">
-              <q-img src="/brazos.png" height="240px" class="card-img">
+              <q-img src="/brazos.png" class="card-img">
                 <div class="absolute-bottom text-h6 text-weight-bold text-center text-purple bg-card-label">
                   BRAZOS
                 </div>
@@ -151,6 +151,7 @@ function irARuta(ruta) {
 }
 
 .card-img {
+  height: 240px;
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -209,5 +210,44 @@ function irARuta(ruta) {
 
 .arms-card:hover {
   box-shadow: 0 25px 50px rgba(138, 43, 226, 0.35) !important;
+}
+
+/* Media Queries para Responsividad (mínimo 300px) */
+@media (max-width: 599px) {
+  /* Ajustar la grilla para que las tarjetas no queden con paddings gigantes */
+  .row.q-col-gutter-xl {
+    margin-left: -8px !important;
+    margin-top: -8px !important;
+  }
+  .row.q-col-gutter-xl > div {
+    padding-left: 8px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Reducir padding de la página */
+  .page-bg.q-pa-md {
+    padding: 12px 8px !important;
+  }
+  
+  /* Ajustes de Cabecera */
+  .header-section {
+    margin-bottom: 16px;
+  }
+  .app-subtitle {
+    font-size: 1.25rem !important;
+    letter-spacing: 2px !important;
+  }
+  .tracking-widest {
+    letter-spacing: 2.5px !important;
+    font-size: 0.7rem !important;
+  }
+  
+  /* Ajuste de altura de imagen */
+  .card-img {
+    height: 180px;
+  }
 }
 </style>

@@ -22,7 +22,7 @@
 
     <q-card-section class="q-pa-lg card-content">
       <!-- Enfoque y Dificultad -->
-      <div class="row items-center justify-between q-mb-md">
+      <div class="row items-center justify-between q-mb-md header-row">
         <span class="text-subtitle2 text-weight-bold text-grey-3">
           🎯 Enfoque: <span :class="'text-' + color">{{ enfoque }}</span>
         </span>
@@ -110,10 +110,11 @@ defineProps({
   backdrop-filter: blur(4px);
 }
 
-/* Altura del contenedor de video/imagen de 360px */
+/* Contenedor responsivo con relación de aspecto 16:9 */
 .media-container {
-  height: 360px;
+  aspect-ratio: 16 / 9;
   width: 100%;
+  height: auto;
 }
 
 /* Bordes acentuados por color */
@@ -152,5 +153,20 @@ defineProps({
 }
 .glow-purple:hover {
   box-shadow: 0 20px 40px rgba(138, 43, 226, 0.25) !important;
+}
+
+/* Ajustes de Responsividad */
+@media (max-width: 480px) {
+  /* Reducir padding interno de la tarjeta */
+  .card-content.q-pa-lg {
+    padding: 16px !important;
+  }
+  
+  /* Cambiar enfoque y dificultad a columna para que no se encima de 300px */
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 8px;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
   <q-page class="q-pa-md page-bg">
     
     <!-- Banner de la sección en Estilo Glassmorphism -->
-    <div class="col-12 q-mb-xl text-center">
+    <div class="col-12 q-mb-xl text-center banner-container">
       <div class="header-banner q-pa-lg text-white rounded-borders glass-header">
         <h1 class="text-h4 text-weight-bolder q-my-none text-uppercase tracking-wider">
           Entrenamiento de <span class="text-teal">Piernas</span>
@@ -30,7 +30,7 @@ const ejerciciosPiernas = [
   {
     titulo: 'Sentadillas (Squats)',
     imagen: '/piernas_sentadillas.png',
-    video: 'https://www.youtube.com/embed/gcNh17Ckbgg', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/dsCuiccYNGs?si=g27boCWQMfP7-c1V', // Link en formato embed directo
     dificultad: 'Intermedio',
     enfoque: 'Cuádriceps, Glúteos, Femorales y Core',
     paraQueSirve: 'Sirve para construir fuerza general, masa muscular y potencia atlética en todo el tren inferior, además de fortalecer los huesos y ligamentos de las rodillas y caderas.',
@@ -44,7 +44,7 @@ const ejerciciosPiernas = [
   {
     titulo: 'Zancadas / Estocadas (Lunges)',
     imagen: '/piernas_zancadas.png',
-    video: 'https://www.youtube.com/embed/COKYKgQ8KR0', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/Xcfs_3DMKlc?si=C96ngQagmTWpQWUt', // Link en formato embed directo
     dificultad: 'Principiante',
     enfoque: 'Cuádriceps, Glúteos y Estabilidad Unilateral',
     paraQueSirve: 'Se realiza para desarrollar fuerza y equilibrio unilateral (una pierna a la vez), lo cual ayuda a corregir desequilibrios de fuerza entre el lado izquierdo y derecho del cuerpo.',
@@ -58,7 +58,7 @@ const ejerciciosPiernas = [
   {
     titulo: 'Prensa de Piernas (Leg Press)',
     imagen: '/piernas_prensa.png',
-    video: 'https://www.youtube.com/embed/CH3J5rU7N4M', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/bNsrqXUIJqc?si=MWI1nemqa6_gCF4w', // Link en formato embed directo
     dificultad: 'Principiante',
     enfoque: 'Cuádriceps, Glúteos e Isquiotibiales',
     paraQueSirve: 'Se hace para sobrecargar los músculos de las piernas de manera segura, aislando el esfuerzo de empuje sin aplicar tensión axial directa sobre la columna vertebral.',
@@ -72,7 +72,7 @@ const ejerciciosPiernas = [
   {
     titulo: 'Elevación de Talones (Calf Raises)',
     imagen: '/piernas_pantorrillas.png',
-    video: 'https://www.youtube.com/embed/3UWi44yN-HM', // Link en formato embed directo
+    video: 'https://www.youtube.com/embed/6tqRg_tsi3o?si=gi_Al2UnkVmoOG25', // Link en formato embed directo
     dificultad: 'Principiante',
     enfoque: 'Gastrocnemio y Sóleo (Pantorrillas)',
     paraQueSirve: 'Sirve para aislar y desarrollar los músculos de las pantorrillas, mejorando la estabilidad del tobillo y la fuerza de salto o propulsión al correr.',
@@ -101,5 +101,30 @@ const ejerciciosPiernas = [
 
 .tracking-wider {
   letter-spacing: 2px;
+}
+
+/* Ajustes de Responsividad */
+@media (max-width: 480px) {
+  .page-bg.q-pa-md {
+    padding: 12px 8px !important;
+  }
+  
+  .banner-container {
+    margin-bottom: 24px !important;
+  }
+
+  .glass-header.q-pa-lg {
+    padding: 16px !important;
+  }
+
+  .glass-header h1 {
+    font-size: 1.5rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .glass-header p {
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+  }
 }
 </style>
