@@ -13,11 +13,11 @@
       </div>
 
       <!-- Opciones de Grupos Musculares (El foco principal de la pantalla) -->
-      <div class="row q-col-gutter-xl justify-center q-mt-md">
+      <div class="row q-col-gutter-xl justify-center q-mt-md items-stretch">
         
         <!-- Tarjeta Pecho -->
-        <div class="col-12 col-sm-6 col-md-3">
-          <q-card class="grupo-card chest-card cursor-pointer rounded-borders shadow-4" @click="irARuta('/pecho')">
+        <div class="col-12 col-sm-6 col-md-3 flex">
+          <q-card class="grupo-card chest-card cursor-pointer rounded-borders shadow-4 full-width" @click="irARuta('/pecho')">
             <div class="img-container">
               <q-img src="/pecho.png" class="card-img">
                 <div class="absolute-bottom text-h6 text-weight-bold text-center text-red bg-card-label">
@@ -26,16 +26,18 @@
               </q-img>
             </div>
             <q-card-section class="text-center q-pa-md card-content">
-              <div class="text-subtitle1 text-weight-bolder text-grey-9">Fuerza de Empuje</div>
-              <p class="text-caption text-grey-7 q-mt-xs q-mb-md">Desarrolla pectorales, hombro anterior y tríceps.</p>
+              <div>
+                <div class="text-subtitle1 text-weight-bolder text-grey-9">Fuerza de Empuje</div>
+                <p class="text-caption text-grey-7 q-mt-xs q-mb-md">Desarrolla pectorales, hombro anterior y tríceps.</p>
+              </div>
               <q-btn label="Ver Ejercicios" color="red" class="btn-gym" unelevated />
             </q-card-section>
           </q-card>
         </div>
 
         <!-- Tarjeta Espalda -->
-        <div class="col-12 col-sm-6 col-md-3">
-          <q-card class="grupo-card back-card cursor-pointer rounded-borders shadow-4" @click="irARuta('/espalda')">
+        <div class="col-12 col-sm-6 col-md-3 flex">
+          <q-card class="grupo-card back-card cursor-pointer rounded-borders shadow-4 full-width" @click="irARuta('/espalda')">
             <div class="img-container">
               <q-img src="/espalda.png" class="card-img">
                 <div class="absolute-bottom text-h6 text-weight-bold text-center text-blue bg-card-label">
@@ -44,16 +46,18 @@
               </q-img>
             </div>
             <q-card-section class="text-center q-pa-md card-content">
-              <div class="text-subtitle1 text-weight-bolder text-grey-9">Fuerza de Tracción</div>
-              <p class="text-caption text-grey-7 q-mt-xs q-mb-md">Ensancha tus dorsales y fortalece tu espalda.</p>
+              <div>
+                <div class="text-subtitle1 text-weight-bolder text-grey-9">Fuerza de Tracción</div>
+                <p class="text-caption text-grey-7 q-mt-xs q-mb-md">Ensancha tus dorsales y fortalece tu espalda.</p>
+              </div>
               <q-btn label="Ver Ejercicios" color="blue" class="btn-gym" unelevated />
             </q-card-section>
           </q-card>
         </div>
 
         <!-- Tarjeta Piernas -->
-        <div class="col-12 col-sm-6 col-md-3">
-          <q-card class="grupo-card legs-card cursor-pointer rounded-borders shadow-4" @click="irARuta('/piernas')">
+        <div class="col-12 col-sm-6 col-md-3 flex">
+          <q-card class="grupo-card legs-card cursor-pointer rounded-borders shadow-4 full-width" @click="irARuta('/piernas')">
             <div class="img-container">
               <q-img src="/piernas.png" class="card-img">
                 <div class="absolute-bottom text-h6 text-weight-bold text-center text-teal bg-card-label">
@@ -62,16 +66,18 @@
               </q-img>
             </div>
             <q-card-section class="text-center q-pa-md card-content">
-              <div class="text-subtitle1 text-weight-bolder text-grey-9">Tren Inferior</div>
-              <p class="text-caption text-grey-7 q-mt-xs q-mb-md">Fortalece cuádriceps, glúteos y pantorrillas.</p>
+              <div>
+                <div class="text-subtitle1 text-weight-bolder text-grey-9">Tren Inferior</div>
+                <p class="text-caption text-grey-7 q-mt-xs q-mb-md">Fortalece cuádriceps, glúteos y pantorrillas.</p>
+              </div>
               <q-btn label="Ver Ejercicios" color="teal" class="btn-gym" unelevated />
             </q-card-section>
           </q-card>
         </div>
 
         <!-- Tarjeta Brazos -->
-        <div class="col-12 col-sm-6 col-md-3">
-          <q-card class="grupo-card arms-card cursor-pointer rounded-borders shadow-4" @click="irARuta('/brazos')">
+        <div class="col-12 col-sm-6 col-md-3 flex">
+          <q-card class="grupo-card arms-card cursor-pointer rounded-borders shadow-4 full-width" @click="irARuta('/brazos')">
             <div class="img-container">
               <q-img src="/brazos.png" class="card-img">
                 <div class="absolute-bottom text-h6 text-weight-bold text-center text-purple bg-card-label">
@@ -80,8 +86,10 @@
               </q-img>
             </div>
             <q-card-section class="text-center q-pa-md card-content">
-              <div class="text-subtitle1 text-weight-bolder text-grey-9">Hombros y Brazos</div>
-              <p class="text-caption text-grey-7 q-mt-xs q-mb-md">Esculpe tus deltoides, bíceps y tríceps.</p>
+              <div>
+                <div class="text-subtitle1 text-weight-bolder text-grey-9">Hombros y Brazos</div>
+                <p class="text-caption text-grey-7 q-mt-xs q-mb-md">Esculpe tus deltoides, bíceps y tríceps.</p>
+              </div>
               <q-btn label="Ver Ejercicios" color="purple" class="btn-gym" unelevated />
             </q-card-section>
           </q-card>
@@ -138,6 +146,9 @@ function irARuta(ruta) {
 
 /* Tarjetas Musculares (Protagonistas del diseño) */
 .grupo-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   background: rgba(30, 41, 59, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -156,6 +167,10 @@ function irARuta(ruta) {
 }
 
 .card-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #1e293b;
   color: #f8fafc;
   border-top: 1px solid rgba(255, 255, 255, 0.05);

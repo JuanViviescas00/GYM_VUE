@@ -14,7 +14,7 @@
       </q-toolbar>
     </q-header>
 
-    <!-- Menú Lateral de Navegación (Drawer) -->
+    <!--Menu Lateral -->
     <q-drawer
       v-model="leftDrawerOpen"
       side="left"
@@ -32,7 +32,7 @@
 
       <q-list class="q-mt-md q-px-sm">
         
-        <!-- Opción Inicio -->
+        <!--Inicio -->
 
         <q-item
           clickable
